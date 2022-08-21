@@ -1,0 +1,1 @@
+isAttackCooldown = false;
