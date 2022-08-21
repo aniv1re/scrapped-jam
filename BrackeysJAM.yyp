@@ -15,6 +15,7 @@
     {"id":{"name":"roomTest","path":"rooms/roomTest/roomTest.yy",},"order":0,},
     {"id":{"name":"objWeapon_GunProj","path":"objects/objWeapon_GunProj/objWeapon_GunProj.yy",},"order":0,},
     {"id":{"name":"objWeapon_Wrench","path":"objects/objWeapon_Wrench/objWeapon_Wrench.yy",},"order":0,},
+    {"id":{"name":"asd","path":"sprites/asd/asd.yy",},"order":4,},
     {"id":{"name":"sprtTileSet_Desert","path":"sprites/sprtTileSet_Desert/sprtTileSet_Desert.yy",},"order":1,},
     {"id":{"name":"objBot_Gunner","path":"objects/objBot_Gunner/objBot_Gunner.yy",},"order":0,},
     {"id":{"name":"sprWeapon_WrenchSwoosh","path":"sprites/sprWeapon_WrenchSwoosh/sprWeapon_WrenchSwoosh.yy",},"order":1,},
