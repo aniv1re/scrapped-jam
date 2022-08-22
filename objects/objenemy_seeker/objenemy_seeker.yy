@@ -1,19 +1,18 @@
 {
-  "name": "objEnemy_Seeker",
   "spriteId": {
-    "name": "sprEnemy_Seeker",
-    "path": "sprites/sprEnemy_Seeker/sprEnemy_Seeker.yy",
+    "name": "sprEnemy_Seeker_Idle",
+    "path": "sprites/sprEnemy_Seeker_Idle/sprEnemy_Seeker_Idle.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "objEnemy_Base",
     "path": "objects/objEnemy_Base/objEnemy_Base.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -40,6 +39,7 @@
     "path": "folders/1 - Objects/EnemyEngine/Enemy.yy",
   },
   "resourceVersion": "1.0",
+  "name": "objEnemy_Seeker",
   "tags": [],
   "resourceType": "GMObject",
 }

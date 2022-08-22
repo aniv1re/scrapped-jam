@@ -1,19 +1,18 @@
 {
-  "name": "objBot_Gunner",
   "spriteId": {
     "name": "sprBotGunner_Idle",
     "path": "sprites/sprBotGunner_Idle/sprBotGunner_Idle.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "objBot_Base",
     "path": "objects/objBot_Base/objBot_Base.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -35,6 +34,7 @@
     "path": "folders/1 - Objects/BotsEngine/Bot.yy",
   },
   "resourceVersion": "1.0",
+  "name": "objBot_Gunner",
   "tags": [],
   "resourceType": "GMObject",
 }

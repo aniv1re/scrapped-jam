@@ -1,2 +1,2 @@
-mobHealth -= global.botGunnerDamage;
+mobHealth -= other.bulletDamage;
 currentState = stateEnemy.hurt;

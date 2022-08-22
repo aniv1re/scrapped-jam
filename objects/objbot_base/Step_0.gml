@@ -1,4 +1,9 @@
 /// @description Bot.StateMachine
+
+if (botHealth <= 0) {
+	instance_destroy();	
+}
+
 var getNearestEnemy = instance_nearest(x, y, objEnemy_Base);
 var currentInstance = id;
 
@@ -109,6 +114,7 @@ if (currentState == stateBot.move) {
 				with (projId) {
 					direction = point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y);
 					speed = 3;
+					bulletDamage = other.botDamage;
 				}
 	
 				isAttackCooldown = true;

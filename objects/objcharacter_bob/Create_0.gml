@@ -3,7 +3,7 @@ instance_create_layer(x, y, "OBJ_Layer", objWeapon_Wrench);
 event_inherited();
 
 // Статы персонажа, которые переопределяются от objCharacter_Base
-moveSpeed = 3;
+moveSpeed = 2;
 baseDamage = 4;
 characterHealth = 3;
 

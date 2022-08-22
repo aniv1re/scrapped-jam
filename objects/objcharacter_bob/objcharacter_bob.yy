@@ -1,19 +1,18 @@
 {
-  "name": "objCharacter_Bob",
   "spriteId": {
     "name": "sprCharacter_Idle",
     "path": "sprites/sprCharacter_Idle/sprCharacter_Idle.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "objCharacter_Base",
     "path": "objects/objCharacter_Base/objCharacter_Base.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -35,6 +34,7 @@
     "path": "folders/1 - Objects/CharacterEngine/Character.yy",
   },
   "resourceVersion": "1.0",
+  "name": "objCharacter_Bob",
   "tags": [],
   "resourceType": "GMObject",
 }
