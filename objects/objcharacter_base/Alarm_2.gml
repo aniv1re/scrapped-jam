@@ -1,0 +1,1 @@
+isDamageBlink = !isDamageBlink;

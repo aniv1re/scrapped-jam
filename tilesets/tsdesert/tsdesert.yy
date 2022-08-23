@@ -1,9 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "name": "tsDesert",
   "spriteId": {
     "name": "sprtTileSet_Desert",
     "path": "sprites/sprtTileSet_Desert/sprtTileSet_Desert.yy",
@@ -14,9 +9,13 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "out_tilehborder": 2,
   "out_tilevborder": 2,
-  "spriteNoExport": true,
   "out_columns": 2,
   "tile_count": 6,
   "autoTileSets": [],
@@ -43,6 +42,7 @@
     "path": "folders/Sprites/Tile.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tsDesert",
   "tags": [],
   "resourceType": "GMTileSet",
 }

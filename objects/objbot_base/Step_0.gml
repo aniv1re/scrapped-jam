@@ -141,16 +141,18 @@ if (currentState == stateBot.move) {
 		}
 	}
 }
-
-//if (currentState == stateBot.attack) {
-//	if (instance_exists(getNearestEnemy)) {
-//		if (!point_in_circle(getNearestEnemy.x, getNearestEnemy.y, x, y, attackRadius)) {
-//			currentState = stateBot.move;
-//		}
 	
-
-//	}
-//}
+if (currentState == stateBot.hurt) {
+	if (!isDamaged) {
+		isDamageBlink = true;
+		alarm[3] = 8;
+	
+		alarm[1] = 30;
+		isDamaged = true;
+	}
+	
+	currentState = stateBot.move;
+}
 
 x = clamp(x, 168, room_width - 168);
 y = clamp(y, 98, room_height - 98);

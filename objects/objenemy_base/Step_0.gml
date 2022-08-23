@@ -25,8 +25,7 @@ if (currentState == stateEnemy.idle) {
 if (currentState == stateEnemy.move) {
 	sprite_index = spriteMove;
 	
-	if (currentEnemyType == enemyType.seeker) {
-		if (instance_exists(nearestBot)) {
+	if (instance_exists(nearestBot)) {
 			if (point_in_circle(nearestBot.x, nearestBot.y ,x, y, attackRadius)) {
 				currentState = stateEnemy.attack;
 			}
@@ -64,27 +63,31 @@ if (currentState == stateEnemy.move) {
 				mp_potential_step_object(global.playerPosX, global.playerPosY, moveSpeed * speedSlow, objEnemy_Base);
 			}
 		}
-	}
 }
 
 if (currentState == stateEnemy.hurt) {
 	var dir = point_direction(global.playerPosX, global.playerPosY, x, y);
-	speed -= .1;
-
-	if (!isKnockbacked) {
-		var knockStr = baseKnockbackStrength - knockbackReduce;
-		if (knockStr > 0) {
-			motion_add(dir, knockStr);
-		}
+	
+	//if (speed >= 0) { speed -= .2 };
+	
+	//if (!isKnockbacked) {
+	//	if (baseKnockbackStrength > knockbackReduce) {
+	//		motion_add(dir, baseKnockbackStrength - knockbackReduce / 2);
+	//	}
 		
-		alarm[0] = 15;
-		isKnockbacked = true;
-	}
+	//	alarm[0] = 15;
+	//	isKnockbacked = true;
+	//}
 	
 	if (!isDamaged) {
+		isDamageBlink = true;
+		alarm[3] = 8;
+	
 		alarm[1] = 30;
 		isDamaged = true;
 	}
+	
+	currentState = stateEnemy.move;
 }
 	
 if (currentState == stateEnemy.attack) {
@@ -95,23 +98,47 @@ if (currentState == stateEnemy.attack) {
 		else {
 			sprite_index = spriteIdle;
 			
-			
-		
-			if (currentEnemyType == enemyType.seeker) {
-				if (!isAttacked) {
-					image_xscale = 1.5 * flip;
-					image_yscale = 0.5;
+			switch (currentEnemyType) {
+				case enemyType.seeker: {
+					if (!isAttacked) {
+						image_xscale = 1.5 * flip;
+						image_yscale = 0.5;
 					
-					if (instance_exists(nearestBot)) {
-						var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
+						if (instance_exists(nearestBot)) {
+							var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
 					
-						with (attack) {
-							direction = point_direction(x, y, nearestBot.x, nearestBot.y);
-							image_angle = direction;
-							bulletDamage = other.mobDamage;
-						}		
-						isAttacked = true;
-						alarm[2] = 60;
+							with (attack) {
+								direction = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
+								image_angle = direction;
+								bulletDamage = other.mobDamage;
+							}		
+							isAttacked = true;
+							alarm[2] = 60;
+						}
+					}
+				}
+				case enemyType.splasher: {
+					if (!isAttacked) {
+						image_xscale = 1.5 * flip;
+						image_yscale = 0.5;
+					
+						if (instance_exists(nearestBot)) {
+							var angle = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
+							for (var i = 0; i < 8; i++) {
+								var bullet = instance_create_layer(x, y, "OBJ_Layer", objSplasher_Bullet);
+								
+								with (bullet) {
+									direction = angle;
+									image_angle = direction;
+									bulletDamage = other.mobDamage;
+								}		
+								
+								angle += 45;
+							}
+							
+							isAttacked = true;
+							alarm[2] = 160;
+						}
 					}
 				}
 			}
@@ -124,21 +151,44 @@ if (currentState == stateEnemy.attack) {
 		else {
 			sprite_index = spriteIdle;
 		
-			if (currentEnemyType == enemyType.seeker) {
-				if (!isAttacked) {
-						image_xscale = 1.5 * flip;
-						image_yscale = 0.5;
-						
-						var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
+			switch (currentEnemyType) {
+				case enemyType.seeker: {
+						if (!isAttacked) {
+							image_xscale = 1.5 * flip;
+							image_yscale = 0.5;
 					
-						with (attack) {
-							direction = point_direction(x, y, global.playerPosX, global.playerPosY);
-							image_angle = direction;
-							bulletDamage = other.mobDamage;
+							var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
+					
+							with (attack) {
+								direction = point_direction(x, y, global.playerPosX, global.playerPosY - 5);
+								image_angle = direction;
+								bulletDamage = other.mobDamage;
+							}		
+							isAttacked = true;
+							alarm[2] = 60;
 						}
+					}
+					case enemyType.splasher: {
+						if (!isAttacked) {
+							image_xscale = 1.5 * flip;
+							image_yscale = 0.5;
 					
-						isAttacked = true;
-						alarm[2] = 60;
+							var angle = point_direction(x, y, global.playerPosX, global.playerPosY - 5);
+							for (var i = 0; i < 8; i++) {
+								var bullet = instance_create_layer(x, y, "OBJ_Layer", objSplasher_Bullet);
+								
+								with (bullet) {
+									direction = angle;
+									image_angle = direction;
+									bulletDamage = other.mobDamage;
+								}		
+								
+								angle += 45;
+							}
+							
+							isAttacked = true;
+							alarm[2] = 160;
+						}
 					}
 				}
 			}

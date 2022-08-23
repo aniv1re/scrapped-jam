@@ -12,7 +12,18 @@ if (global.aliveMobs < global.mobCapAtLevel && global.currentEnemyPoints > 0) {
 	
 	// Спавн моба на пустом месте
 	if (!place_meeting(spawnCoordX, spawnCoordY, objEnemy_Base) && point_in_rectangle(spawnCoordX, spawnCoordY, 16, 16, room_width - 168, room_height - 98)) {
-		instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
-		global.currentEnemyPoints -= 2;
+		switch (irandom_range(0, 1)) {
+			case 0: {
+				instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
+				global.currentEnemyPoints -= 2;
+				break;
+			}
+			case 1: {
+				instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
+				global.currentEnemyPoints -= 5;
+				break;
+			}
+		}
+		
 	}
 }

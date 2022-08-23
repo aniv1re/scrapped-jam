@@ -10,3 +10,4 @@ currentEnemyType = botType.gunner;
 spriteIdle = sprBotGunner_Idle;
 spriteMove = sprBotGunner_Move;
 followRadius = 25;
+dropScrap = 3;

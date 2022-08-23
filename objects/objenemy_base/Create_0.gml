@@ -8,7 +8,8 @@ enum stateEnemy {
 }
 
 enum enemyType {
-	seeker = 2
+	seeker = 2,
+	splasher = 4
 }
 
 mass = 1;
@@ -20,6 +21,7 @@ isKnockbacked = false;
 isAttacked = false;
 currentState = stateEnemy.idle;
 flip = 1;
+isDamageBlink = false;
 
 // Изменяемые статы и спрайты в будущем
 moveSpeed = 0;
@@ -35,4 +37,4 @@ spriteAttack = sprTest;
 
 dropScrap = 0;
 
-shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);
+shadowObj = 0;

@@ -6,7 +6,8 @@ enum stateBot{
 	idle = 2,
 	move = 4,
 	attack = 8,
-	create = 16
+	create = 16,
+	hurt = 32
 }
 
 mass = 1;
@@ -29,6 +30,8 @@ currentEnemyType = botType.gunner;
 spriteIdle = sprTest;
 spriteMove = sprTest;
 followRadius = 0;
+dropScrap = 0;
+isDamageBlink = false;
 
 gunId = instance_create_layer(x, y + 4, "OBJ_Layer", objBotGunner_Gun);
 shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);

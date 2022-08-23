@@ -1,6 +1,9 @@
 global.isDebug = true;
 global.playerPosX = objCharacter_Base.x;
 global.playerPosY = objCharacter_Base.y;
+
+cursor_sprite = sprCursorAttack_1;
+
 //global.botGunnerDamage = 2;
 //global.baseDamage = 4;
 

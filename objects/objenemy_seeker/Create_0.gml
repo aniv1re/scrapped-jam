@@ -11,4 +11,6 @@ spriteIdle = sprEnemy_Seeker_Idle;
 spriteMove = sprEnemy_Seeker_Move;
 spriteAttack = sprEnemy_Seeker_Attack;
 
+shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);
+
 dropScrap = 2;

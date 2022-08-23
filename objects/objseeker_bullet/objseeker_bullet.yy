@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWeapon_SeekerBullet",
-    "path": "sprites/sprWeapon_SeekerBullet/sprWeapon_SeekerBullet.yy",
+    "name": "sprWeapon_Bullet",
+    "path": "sprites/sprWeapon_Bullet/sprWeapon_Bullet.yy",
   },
   "solid": false,
   "visible": true,
