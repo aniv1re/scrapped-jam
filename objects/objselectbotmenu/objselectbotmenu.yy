@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprBotBase",
+    "path": "sprites/sprBotBase/sprBotBase.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

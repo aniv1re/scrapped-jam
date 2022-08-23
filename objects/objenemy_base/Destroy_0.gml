@@ -1,3 +1,6 @@
+instance_create_layer(x, y - 4, "OBJ_FX", objDeathExpl_Enemy);
+global.currentPlayerExpPoints++;
+
 for (var i = 0; i < dropScrap; i++) {
     var createdInstId = instance_create_layer(x, y, "OBJ_Layer", objDrop_Scrap);
 	

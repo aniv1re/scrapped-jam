@@ -68,24 +68,8 @@ if (currentState == stateEnemy.move) {
 if (currentState == stateEnemy.hurt) {
 	var dir = point_direction(global.playerPosX, global.playerPosY, x, y);
 	
-	//if (speed >= 0) { speed -= .2 };
-	
-	//if (!isKnockbacked) {
-	//	if (baseKnockbackStrength > knockbackReduce) {
-	//		motion_add(dir, baseKnockbackStrength - knockbackReduce / 2);
-	//	}
-		
-	//	alarm[0] = 15;
-	//	isKnockbacked = true;
-	//}
-	
-	if (!isDamaged) {
-		isDamageBlink = true;
-		alarm[3] = 8;
-	
-		alarm[1] = 30;
-		isDamaged = true;
-	}
+	isDamageBlink = true;
+	alarm[3] = 8;
 	
 	currentState = stateEnemy.move;
 }

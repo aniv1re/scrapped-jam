@@ -1,4 +1,8 @@
-//draw_text(10, 10, "botGunner Damage: " + string(global.botGunnerDamage));
-//draw_text(10, 55, "Current spawner points: " + string(global.currentEnemyPoints) + "(+" + string(global.pointIncome) + ")");
-//draw_text(10, 70, "Mob cap: " + string(global.mobCapAtLevel));
-//draw_text(10, 85, "Alive mobs: " + string(global.aliveMobs));
+draw_set_font(fontStats);
+
+draw_text(5, 500, "EXP: " + string(global.currentPlayerExpPoints));
+draw_text(5, 516, "Level: " + string(global.currentLevel));
+draw_text(5, 532, "EXP to next LVL: " + string(global.currentMaxExpPoints));
+draw_text(5, 548, "Current spawner points: " + string(global.currentEnemyPoints) + "(+" + string(global.pointIncome) + ")");
+draw_text(5, 564, "Mob cap: " + string(global.mobCapAtLevel));
+draw_text(5, 580, "Alive mobs: " + string(global.aliveMobs));
