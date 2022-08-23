@@ -34,3 +34,5 @@ spriteMove = sprTest;
 spriteAttack = sprTest;
 
 dropScrap = 0;
+
+shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);

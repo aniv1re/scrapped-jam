@@ -31,3 +31,4 @@ spriteMove = sprTest;
 followRadius = 0;
 
 gunId = instance_create_layer(x, y + 4, "OBJ_Layer", objBotGunner_Gun);
+shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);

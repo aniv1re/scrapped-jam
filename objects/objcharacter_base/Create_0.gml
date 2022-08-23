@@ -31,3 +31,5 @@ spriteIdle = sprTest;
 spriteMove = sprTest;
 attackColldown = 2;
 isAttacked = false;
+
+shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);

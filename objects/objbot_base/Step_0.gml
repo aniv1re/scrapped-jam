@@ -1,6 +1,7 @@
 /// @description Bot.StateMachine
 
 if (botHealth <= 0) {
+	instance_destroy(shadowObj);
 	instance_destroy();	
 }
 
@@ -109,7 +110,7 @@ if (currentState == stateBot.move) {
 				image_xscale = 1.5 * flip;
 				image_yscale = 0.5;
 				
-				var projId = instance_create_layer(gunId.x, gunId.y + 4, "OBJ_Layer", objWeapon_GunProj);
+				var projId = instance_create_layer(gunId.x, gunId.y - 4, "OBJ_Layer", objWeapon_GunProj);
 	
 				with (projId) {
 					direction = point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y);
@@ -156,3 +157,8 @@ y = clamp(y, 98, room_height - 98);
 
 image_xscale = scrApproach(image_xscale, flip, 0.05);
 image_yscale = scrApproach(image_yscale, 1, 0.05);
+
+with (shadowObj) {
+	x = other.x;
+	y = other.y;
+}

@@ -56,7 +56,7 @@ if (mouse_check_button(mb_left) && !isAttacked) {
 	image_xscale = 1.5 * global.flipCharacter;
 	image_yscale = 0.5;
 						
-	var inst = instance_create_layer(x, y, "OBJ_Layer", objWeaponWrench_Swoosh);
+	var inst = instance_create_layer(x, y - 4, "OBJ_Layer", objWeaponWrench_Swoosh);
 	
 	with (inst) {
 		direction =  point_direction(x, y, mouse_x, mouse_y);
@@ -78,3 +78,8 @@ y = clamp(y, 98, room_height - 98);
 
 image_xscale = scrApproach(image_xscale, global.flipCharacter, 0.05);
 image_yscale = scrApproach(image_yscale, 1, 0.05);
+
+with (shadowObj) {
+	x = other.x;
+	y = other.y;
+}

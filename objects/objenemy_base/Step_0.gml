@@ -1,4 +1,10 @@
 /// @description Enemy.StateMachine
+
+if (mobHealth <= 0) {
+	instance_destroy(shadowObj);
+	instance_destroy();
+} 
+
 var nearestBot = instance_nearest(x, y, objBot_Base);
 
 if (currentState == stateEnemy.idle) { 
@@ -76,15 +82,8 @@ if (currentState == stateEnemy.hurt) {
 	}
 	
 	if (!isDamaged) {
-		
-		
-		if (mobHealth <= 0) {
-			instance_destroy();
-		} 
-		else {
-			alarm[1] = 30;
-			isDamaged = true;
-		}
+		alarm[1] = 30;
+		isDamaged = true;
 	}
 }
 	
@@ -152,3 +151,8 @@ y = clamp(y, 98, room_height - 98);
 
 image_xscale = scrApproach(image_xscale, flip, 0.05);
 image_yscale = scrApproach(image_yscale, 1, 0.05);
+
+with (shadowObj) {
+	x = other.x;
+	y = other.y;
+}
