@@ -53,10 +53,28 @@ if (global.currentState == statePlayer.move) {
 }
 
 if (mouse_check_button(mb_left) && !isAttacked) {
-	instance_create_layer(x, y, "OBJ_Layer", objWeapon_WrenchSwoosh);
+	image_xscale = 1.5 * global.flipCharacter;
+	image_yscale = 0.5;
+						
+	var inst = instance_create_layer(x, y, "OBJ_Layer", objWeaponWrench_Swoosh);
+	
+	with (inst) {
+		direction =  point_direction(x, y, mouse_x, mouse_y);
+		image_angle =  direction;
+		speed = 3;
+		alarm[0] = 10;
+		bulletDamage = 2;
+	}
+	
 	isAttacked = true;
 	// Таймер на 1 секунду (30 тиков = 1 секунда)
 	alarm[0] = 40;
 }
 
 #endregion
+
+x = clamp(x, 168, room_width - 168);
+y = clamp(y, 98, room_height - 98);
+
+image_xscale = scrApproach(image_xscale, global.flipCharacter, 0.05);
+image_yscale = scrApproach(image_yscale, 1, 0.05);

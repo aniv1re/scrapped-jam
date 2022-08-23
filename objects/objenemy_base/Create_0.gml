@@ -19,6 +19,7 @@ isDamaged = false;
 isKnockbacked = false;
 isAttacked = false;
 currentState = stateEnemy.idle;
+flip = 1;
 
 // Изменяемые статы и спрайты в будущем
 moveSpeed = 0;
@@ -31,3 +32,5 @@ currentEnemyType = enemyType.seeker;
 spriteIdle = sprTest;
 spriteMove = sprTest;
 spriteAttack = sprTest;
+
+dropScrap = 0;

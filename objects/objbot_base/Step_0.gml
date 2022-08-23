@@ -10,7 +10,6 @@ var currentInstance = id;
 #region Flip bot to enemy
 
 // FlipBot_Base
-var flip = 0;	
 if (instance_exists(getNearestEnemy)) {
 	if (x >= getNearestEnemy.x) {	
 		image_xscale = -1;
@@ -36,7 +35,6 @@ else {
 if (instance_exists(getNearestEnemy)) {
 	var dir = point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y);
 	with (gunId) {
-		var flip = 0;
 	
 		if (currentInstance.x >= getNearestEnemy.x) {	
 			image_yscale = -1;
@@ -53,7 +51,7 @@ if (instance_exists(getNearestEnemy)) {
 		else if (flip == 1) {
 			self.x = other.x + 4;
 		}
-		self.y = other.y;
+		self.y = other.y - 4;
 	
 		direction = dir;
 		image_angle = direction;
@@ -62,8 +60,7 @@ if (instance_exists(getNearestEnemy)) {
 else {
 	var dir = point_direction(x, y, global.playerPosX, global.playerPosY);
 	with (gunId) {
-		var flip = 0;
-	
+		
 		if (currentInstance.x >= global.playerPosX) {	
 			image_yscale = -1;
 			flip = -1;
@@ -79,7 +76,7 @@ else {
 		else if (flip == 1) {
 			self.x = other.x + 4;
 		}
-		self.y = other.y;
+		self.y = other.y - 4;
 	
 		direction = dir;
 		image_angle = direction;
@@ -109,7 +106,10 @@ if (currentState == stateBot.move) {
 		if (point_in_circle(getNearestEnemy.x, getNearestEnemy.y, x, y, attackRadius)) {
 			//currentState = stateBot.attack;
 			if (!isAttackCooldown) {
-				var projId = instance_create_layer(gunId.x, gunId.y, "OBJ_Layer", objWeapon_GunProj);
+				image_xscale = 1.5 * flip;
+				image_yscale = 0.5;
+				
+				var projId = instance_create_layer(gunId.x, gunId.y + 4, "OBJ_Layer", objWeapon_GunProj);
 	
 				with (projId) {
 					direction = point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y);
@@ -150,3 +150,9 @@ if (currentState == stateBot.move) {
 
 //	}
 //}
+
+x = clamp(x, 168, room_width - 168);
+y = clamp(y, 98, room_height - 98);
+
+image_xscale = scrApproach(image_xscale, flip, 0.05);
+image_yscale = scrApproach(image_yscale, 1, 0.05);

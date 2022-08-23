@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWeapon_WrenchSwooshLegacy",
-    "path": "sprites/sprWeapon_WrenchSwooshLegacy/sprWeapon_WrenchSwooshLegacy.yy",
+    "name": "sprScrap",
+    "path": "sprites/sprScrap/sprScrap.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,19 +22,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objCharacter_Base","path":"objects/objCharacter_Base/objCharacter_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "WeaponProjectiles",
-    "path": "folders/1 - Objects/CharacterEngine/CharacterWeapons/WeaponProjectiles.yy",
+    "name": "EnemyEngine",
+    "path": "folders/1 - Objects/EnemyEngine.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objWeapon_WrenchSwoosh",
+  "name": "objDrop_Scrap",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,16 +1,15 @@
 {
-  "name": "objCharacter_Base",
   "spriteId": {
     "name": "sprWeaponBase",
     "path": "sprites/sprWeaponBase/sprWeaponBase.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": null,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -35,6 +34,7 @@
     "path": "folders/1 - Objects/CharacterEngine.yy",
   },
   "resourceVersion": "1.0",
+  "name": "objCharacter_Base",
   "tags": [],
   "resourceType": "GMObject",
 }

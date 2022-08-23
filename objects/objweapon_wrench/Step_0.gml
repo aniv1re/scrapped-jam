@@ -7,7 +7,7 @@ if (global.flipCharacter == -1) {
 else if (global.flipCharacter == 1) {
 	x = global.playerPosX + 4;
 }
-y = global.playerPosY;
+y = global.playerPosY - 5;
 
 // Направление спрайта к курсору игрока
 direction = point_direction(global.playerPosX, global.playerPosY, mouse_x, mouse_y)

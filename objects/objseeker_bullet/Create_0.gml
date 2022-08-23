@@ -1,2 +1,4 @@
 bulletDamage = 0;
-alarm[0] = 30;
+isReleased = true
+speed = 2;
+alarm[0] = 10;;

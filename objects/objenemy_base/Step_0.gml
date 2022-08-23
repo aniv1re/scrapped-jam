@@ -27,7 +27,6 @@ if (currentState == stateEnemy.move) {
 			else if (point_in_circle(nearestBot.x, nearestBot.y ,x, y, aggroRadius)) {
 				direction = point_direction(x, y, nearestBot.x, nearestBot.y);
 			
-				var flip = 0;
 				if (x >= nearestBot.x) {	
 					image_xscale = -1;
 					flip = -1;
@@ -47,7 +46,6 @@ if (currentState == stateEnemy.move) {
 			else (point_in_circle(global.playerPosX, global.playerPosY, x, y, aggroRadius)) {
 				direction = point_direction(x, y, global.playerPosX, global.playerPosY);
 			
-				var flip = 0;
 				if (x >= global.playerPosX) {	
 					image_xscale = -1;
 					flip = -1;
@@ -96,18 +94,21 @@ if (currentState == stateEnemy.attack) {
 				currentState = stateEnemy.move;
 		}
 		else {
-			//sprite_index = spriteAttack;
 			sprite_index = spriteIdle;
+			
+			
 		
 			if (currentEnemyType == enemyType.seeker) {
 				if (!isAttacked) {
+					image_xscale = 1.5 * flip;
+					image_yscale = 0.5;
+					
 					if (instance_exists(nearestBot)) {
-						var attack = instance_create_layer(x, y, "OBJ_Layer", objSeeker_Bullet);
+						var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
 					
 						with (attack) {
 							direction = point_direction(x, y, nearestBot.x, nearestBot.y);
 							image_angle = direction;
-							speed = 1;
 							bulletDamage = other.mobDamage;
 						}		
 						isAttacked = true;
@@ -126,12 +127,14 @@ if (currentState == stateEnemy.attack) {
 		
 			if (currentEnemyType == enemyType.seeker) {
 				if (!isAttacked) {
-						var attack = instance_create_layer(x, y, "OBJ_Layer", objSeeker_Bullet);
+						image_xscale = 1.5 * flip;
+						image_yscale = 0.5;
+						
+						var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
 					
 						with (attack) {
 							direction = point_direction(x, y, global.playerPosX, global.playerPosY);
 							image_angle = direction;
-							speed = 1;
 							bulletDamage = other.mobDamage;
 						}
 					
@@ -142,3 +145,10 @@ if (currentState == stateEnemy.attack) {
 			}
 		}
 }
+
+x = clamp(x, 168, room_width - 168);
+y = clamp(y, 98, room_height - 98);
+
+
+image_xscale = scrApproach(image_xscale, flip, 0.05);
+image_yscale = scrApproach(image_yscale, 1, 0.05);

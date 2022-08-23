@@ -16,6 +16,7 @@ isDamaged = false;
 isKnockbacked = false;
 isAttackCooldown = false;
 currentState = stateBot.move;
+flip = 1;
 
 // Изменяемые статы и спрайты в будущем
 moveSpeed = 0;
@@ -29,4 +30,4 @@ spriteIdle = sprTest;
 spriteMove = sprTest;
 followRadius = 0;
 
-gunId = instance_create_layer(x, y, "OBJ_Layer", objBotGunner_Gun);
+gunId = instance_create_layer(x, y + 4, "OBJ_Layer", objBotGunner_Gun);
