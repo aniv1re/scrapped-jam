@@ -1,5 +1,8 @@
 enum botType {
-	gunner = 2
+	gunner = 2,
+	machinegun = 4,
+	fly = 8,
+	mortyr = 16
 }
 
 enum stateBot{
@@ -22,16 +25,17 @@ flip = 1;
 // Изменяемые статы и спрайты в будущем
 moveSpeed = 0;
 botHealth = 0;
+botHealthDefault = 0;
 botDamage = 0;
 knockbackReduce = 0;
 aggroRadius = 0;
 attackRadius = 0;
-currentEnemyType = botType.gunner;
+currentBotType = 0;
 spriteIdle = sprTest;
 spriteMove = sprTest;
 followRadius = 0;
 dropScrap = 0;
 isDamageBlink = false;
 
-gunId = instance_create_layer(x, y + 4, "OBJ_Layer", objBotGunner_Gun);
-shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);
+gunId = 0;
+shadowObj = 0;

@@ -21,7 +21,7 @@ if (global.aliveMobs < global.mobCapAtLevel && global.currentEnemyPoints > 0) {
 				global.currentEnemyPoints -= 2;
 				break;
 			}
-			case 4: {
+			default: {
 				if (irandom_range(0, 100) > 80) {
 					instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
 					global.currentEnemyPoints -= 5;

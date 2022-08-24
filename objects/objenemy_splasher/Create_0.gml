@@ -15,3 +15,4 @@ knockbackReduce = 2;
 shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objLarge_Shadow);
 
 dropScrap = 5;
+dropWires = 2;

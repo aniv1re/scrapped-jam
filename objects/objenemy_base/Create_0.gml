@@ -36,5 +36,6 @@ spriteMove = sprTest;
 spriteAttack = sprTest;
 
 dropScrap = 0;
+dropWires = 0;
 
 shadowObj = 0;

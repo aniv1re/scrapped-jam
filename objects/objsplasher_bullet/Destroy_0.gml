@@ -1,1 +1,1 @@
-instance_create_layer(x, y - 4, "OBJ_FX", objDeathExpl_Enemy);
+instance_create_layer(x, y - 4, "OBJ_FX", objBulletDestroy_Enemy);

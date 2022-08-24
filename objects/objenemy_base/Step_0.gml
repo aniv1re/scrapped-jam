@@ -1,5 +1,7 @@
 /// @description Enemy.StateMachine
 
+
+
 if (mobHealth <= 0) {
 	instance_destroy(shadowObj);
 	instance_destroy();

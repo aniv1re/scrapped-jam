@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWeapon_BulletX",
-    "path": "sprites/sprWeapon_BulletX/sprWeapon_BulletX.yy",
+    "name": "sprWeapon_Bullet_Wawe",
+    "path": "sprites/sprWeapon_Bullet_Wawe/sprWeapon_Bullet_Wawe.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,1 +1,0 @@
-isFullDropped = false;

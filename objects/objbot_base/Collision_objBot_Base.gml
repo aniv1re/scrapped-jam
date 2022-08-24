@@ -13,8 +13,8 @@ mm /= mag;
 //Move out of collision
 while (place_meeting(x, y, other))
 {
-    x -= xoff * om; //Move the instance out of collision
-    y -= yoff * om;
-    other.x += xoff * mm; //Move the other instance out of the collision
-    other.y += yoff * mm;
+	x -= xoff * om; //Move the instance out of collision
+	y -= yoff * om;
+	other.x += xoff * mm; //Move the other instance out of the collision
+	other.y += yoff * mm;
 }

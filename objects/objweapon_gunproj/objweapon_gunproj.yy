@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWeapon_GunProj",
-    "path": "sprites/sprWeapon_GunProj/sprWeapon_GunProj.yy",
+    "name": "sprWeapon_Bot_Medium",
+    "path": "sprites/sprWeapon_Bot_Medium/sprWeapon_Bot_Medium.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,6 +25,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objEnemy_Base","path":"objects/objEnemy_Base/objEnemy_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

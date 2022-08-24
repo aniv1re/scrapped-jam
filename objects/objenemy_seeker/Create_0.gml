@@ -1,6 +1,6 @@
 event_inherited();
 
-moveSpeed = 1;
+moveSpeed = .9;
 mobHealth = 6;
 mobDamage = 1;
 knockbackReduce = 1.5;
@@ -14,3 +14,4 @@ spriteAttack = sprEnemy_Seeker_Attack;
 shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);
 
 dropScrap = 2;
+dropWires = 1;

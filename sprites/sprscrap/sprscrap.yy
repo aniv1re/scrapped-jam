@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Scrap",
-    "path": "folders/Sprites/Enemy/Scrap.yy",
+    "name": "Materials",
+    "path": "folders/Sprites/Enemy/Materials.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprScrap",

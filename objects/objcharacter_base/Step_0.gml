@@ -1,5 +1,9 @@
 /// @description User.StateMachine
 
+if (characterHealth <= 0) {
+	game_end();
+}
+
 #region Player.Util
 
 // Захват передвижения
@@ -52,7 +56,7 @@ if (global.currentState == statePlayer.move) {
 	global.currentState = statePlayer.idle;
 }
 
-if (mouse_check_button(mb_left) && !isAttacked) {
+if (mouse_check_button(mb_left) && !isAttacked && !global.isBuilding && !position_meeting(mouse_x, mouse_y, objSelectBotMenu)) {
 	image_xscale = 1.5 * global.flipCharacter;
 	image_yscale = 0.5;
 						
@@ -63,7 +67,7 @@ if (mouse_check_button(mb_left) && !isAttacked) {
 		image_angle =  direction;
 		speed = 3;
 		alarm[0] = 10;
-		bulletDamage = 2;
+		bulletDamage = other.baseDamage;
 	}
 	
 	isAttacked = true;

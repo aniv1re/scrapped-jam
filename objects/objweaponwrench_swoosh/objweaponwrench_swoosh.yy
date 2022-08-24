@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWeapon_WrenchSwoosh",
-    "path": "sprites/sprWeapon_WrenchSwoosh/sprWeapon_WrenchSwoosh.yy",
+    "name": "sprWeapon_Wrench_Wawe",
+    "path": "sprites/sprWeapon_Wrench_Wawe/sprWeapon_Wrench_Wawe.yy",
   },
   "solid": false,
   "visible": true,
