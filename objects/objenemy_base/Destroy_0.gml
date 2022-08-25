@@ -1,4 +1,16 @@
-instance_create_layer(x, y - 4, "OBJ_FX", objDeathExpl_Enemy);
+switch (currentEnemyType) { 
+	case enemyType.baby:
+		instance_create_layer(x, y - 4, "OBJ_FX", objEnemyDeath_SmallFX);
+		break;
+	case enemyType.seeker:
+		instance_create_layer(x, y - 4, "OBJ_FX", objEnemyDeath_MediumFX);
+		break;
+	case enemyType.shotgun:
+	case enemyType.splasher:
+		instance_create_layer(x, y - 4, "OBJ_FX", objEnemyDeath_LargeFX);
+		break;
+}
+
 global.currentPlayerExpPoints++;
 
 if (irandom(1) > .5) {

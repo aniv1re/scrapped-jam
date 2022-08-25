@@ -24,15 +24,12 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objCharacter_Base","path":"objects/objCharacter_Base/objCharacter_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "EnemyEngine",
-    "path": "folders/1 - Objects/EnemyEngine.yy",
+    "name": "Drop",
+    "path": "folders/1 - Objects/EnemyEngine/Drop.yy",
   },
   "resourceVersion": "1.0",
   "name": "objDrop_Wires",

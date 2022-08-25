@@ -1,5 +1,5 @@
 event_inherited();
 
-timer = 30;
+timer = 25;
 sprActivated = sprBeacon_Activated;
-sprActive = sprBeacon_Active;
+sprActive = sprBeacon_Inactive;

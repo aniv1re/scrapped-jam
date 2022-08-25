@@ -9,7 +9,9 @@ enum stateEnemy {
 
 enum enemyType {
 	seeker = 2,
-	splasher = 4
+	splasher = 4,
+	shotgun = 8,
+	baby = 16
 }
 
 mass = 1;

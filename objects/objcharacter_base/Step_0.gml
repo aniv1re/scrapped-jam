@@ -1,7 +1,9 @@
 /// @description User.StateMachine
 
+depth = -y;
+
 if (characterHealth <= 0) {
-	game_end();
+	//game_end();
 }
 
 #region Player.Util

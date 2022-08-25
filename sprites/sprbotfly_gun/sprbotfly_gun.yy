@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BotWeapons",
-    "path": "folders/Sprites/Bot/BotWeapons.yy",
+    "name": "LVL0",
+    "path": "folders/Sprites/Bot/BotWeapons/LVL0.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBotFly_Gun",

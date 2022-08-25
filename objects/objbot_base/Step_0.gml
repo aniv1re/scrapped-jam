@@ -1,5 +1,12 @@
 /// @description Bot.StateMachine
 
+if (currentBotType == botType.fly) {
+	depth = -y - 50;
+}
+else {
+	depth = -y;
+}
+
 if (currentBotType != botType.gunner) {
 	gunId.depth = depth - 1;
 }
@@ -314,17 +321,17 @@ with (shadowObj) {
 	}
 }
 
-if (currentState == stateBot.hurt) {
-	if (!isDamaged) {
-		isDamageBlink = true;
-		alarm[3] = 8;
+//if (currentState == stateBot.hurt) {
+//	if (!isDamaged) {
+//		isDamageBlink = true;
+//		alarm[3] = 8;
 	
-		alarm[1] = 30;
-		isDamaged = true;
-	}
+//		alarm[1] = 30;
+//		isDamaged = true;
+//	}
 	
-	currentState = stateBot.move;
-}
+//	currentState = stateBot.move;
+//}
 
 x = clamp(x, 168, room_width - 168);
 y = clamp(y, 98, room_height - 98);

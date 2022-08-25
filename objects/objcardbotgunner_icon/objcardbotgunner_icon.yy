@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBotMachinegun_CardIcon",
-    "path": "sprites/sprBotMachinegun_CardIcon/sprBotMachinegun_CardIcon.yy",
+    "name": "sprBotGunner_CardIcon",
+    "path": "sprites/sprBotGunner_CardIcon/sprBotGunner_CardIcon.yy",
   },
   "solid": false,
   "visible": true,

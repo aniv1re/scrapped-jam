@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f87b28ea-2ae0-4608-8fa9-6e40d47eb603","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f87b28ea-2ae0-4608-8fa9-6e40d47eb603","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"LayerId":{"name":"0949c575-5f39-4169-8ceb-c83476aae06c","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprBotMortyr_Gun","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"resourceVersion":"1.0","name":"f87b28ea-2ae0-4608-8fa9-6e40d47eb603","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"21592992-2dd9-479e-bea3-7cd0995771f7","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"21592992-2dd9-479e-bea3-7cd0995771f7","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"LayerId":{"name":"d62acfe8-b409-4942-8db8-af57280270c7","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprBotMortyr_Gun","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"resourceVersion":"1.0","name":"21592992-2dd9-479e-bea3-7cd0995771f7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprBotMortyr_Gun","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7b13a1cc-0c22-43ef-bdd4-4c327085c7e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f87b28ea-2ae0-4608-8fa9-6e40d47eb603","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"6c10fde8-ce21-42e9-a6b5-ec922140bf10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"21592992-2dd9-479e-bea3-7cd0995771f7","path":"sprites/sprBotMortyr_Gun/sprBotMortyr_Gun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0949c575-5f39-4169-8ceb-c83476aae06c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d62acfe8-b409-4942-8db8-af57280270c7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BotWeapons",
-    "path": "folders/Sprites/Bot/BotWeapons.yy",
+    "name": "LVL0",
+    "path": "folders/Sprites/Bot/BotWeapons/LVL0.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBotMortyr_Gun",

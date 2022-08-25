@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBeacon_Inactive",
-    "path": "sprites/sprBeacon_Inactive/sprBeacon_Inactive.yy",
+    "name": "sprBeacon_Active",
+    "path": "sprites/sprBeacon_Active/sprBeacon_Active.yy",
   },
   "solid": false,
   "visible": true,

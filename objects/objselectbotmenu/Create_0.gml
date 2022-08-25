@@ -9,3 +9,6 @@ botBuildPriceWires = 0;
 botBuildPriceBatterys = 0;
 isRequiredWires = false;
 isRequiredBatterys = false;
+
+upgradeState = 0;
+unlockState = false;

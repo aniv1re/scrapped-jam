@@ -7,7 +7,7 @@ if (!global.isShield) {
 	}
 }
 else {
-	global.shieldHP--;
+	global.shieldHP -= baseDamage;
 }
 
 instance_destroy(other.id);

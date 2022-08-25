@@ -1,1 +1,3 @@
-global.wires++;
+if (!other.isLocked) {
+	global.wires++;
+}

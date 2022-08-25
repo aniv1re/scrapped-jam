@@ -7,3 +7,5 @@ botBuildPriceWires = 2;
 botBuildPriceBatterys = 0;
 isRequiredWires = true;
 isRequiredBatterys = false;
+
+unlockState = true;

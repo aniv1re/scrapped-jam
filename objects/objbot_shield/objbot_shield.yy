@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bot",
-    "path": "folders/1 - Objects/BotsEngine/Bot.yy",
+    "name": "UpgradeLevel0",
+    "path": "folders/1 - Objects/BotsEngine/Bot/UpgradeLevel0.yy",
   },
   "resourceVersion": "1.0",
   "name": "objBot_Shield",

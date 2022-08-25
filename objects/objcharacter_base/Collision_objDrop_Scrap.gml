@@ -1,1 +1,3 @@
-global.scrap++;
+if (!other.isLocked) {
+	global.scrap++;
+}

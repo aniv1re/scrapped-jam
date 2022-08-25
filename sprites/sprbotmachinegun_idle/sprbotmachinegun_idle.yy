@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BotAnimation",
-    "path": "folders/Sprites/Bot/BotAnimation.yy",
+    "name": "LVL0",
+    "path": "folders/Sprites/Bot/BotAnimation/LVL0.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBotMachinegun_Idle",

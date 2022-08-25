@@ -1,6 +1,6 @@
 /// @description Enemy.StateMachine
 
-
+depth = -y;
 
 if (mobHealth <= 0) {
 	instance_destroy(shadowObj);
@@ -85,25 +85,27 @@ if (currentState == stateEnemy.attack) {
 			sprite_index = spriteIdle;
 			
 			switch (currentEnemyType) {
-				case enemyType.seeker: {
+				case enemyType.seeker: 
 					if (!isAttacked) {
 						image_xscale = 1.5 * flip;
 						image_yscale = 0.5;
 					
 						if (instance_exists(nearestBot)) {
-							var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
-					
-							with (attack) {
-								direction = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
+							var bullet = instance_create_layer(x, y, "OBJ_Layer", objSeeker_Bullet);
+							var angle = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
+							with (bullet) {
+								direction = angle;
 								image_angle = direction;
 								bulletDamage = other.mobDamage;
 							}		
+							
 							isAttacked = true;
 							alarm[2] = 60;
 						}
 					}
-				}
-				case enemyType.splasher: {
+					break;
+				
+				case enemyType.splasher: 
 					if (!isAttacked) {
 						image_xscale = 1.5 * flip;
 						image_yscale = 0.5;
@@ -126,7 +128,31 @@ if (currentState == stateEnemy.attack) {
 							alarm[2] = 160;
 						}
 					}
-				}
+					break;
+					
+				case enemyType.shotgun: 
+					if (!isAttacked) {
+						image_xscale = 1.5 * flip;
+						image_yscale = 0.5;
+					
+						if (instance_exists(nearestBot)) {
+							for (var i = 0; i < 5; i++) {
+								var dir = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
+								var newDir = random_range(dir - 15, dir + 15);
+								
+								var attack = instance_create_layer(x, y - 8, "OBJ_Layer", objShotgun_Bullet);
+								with (attack) {
+									direction = newDir;
+									image_angle = newDir;
+									bulletDamage = other.mobDamage;
+									speed = random_range(2, 3);
+								}
+							}
+							isAttacked = true;
+							alarm[2] = 60;
+						}
+					}
+					break;
 			}
 		}
 	}
@@ -154,7 +180,7 @@ if (currentState == stateEnemy.attack) {
 							alarm[2] = 60;
 						}
 					}
-					case enemyType.splasher: {
+				case enemyType.splasher: {
 						if (!isAttacked) {
 							image_xscale = 1.5 * flip;
 							image_yscale = 0.5;
@@ -175,10 +201,35 @@ if (currentState == stateEnemy.attack) {
 							isAttacked = true;
 							alarm[2] = 160;
 						}
+						break;
+					}
+				case enemyType.shotgun: {
+					if (!isAttacked) {
+						image_xscale = 1.5 * flip;
+						image_yscale = 0.5;
+					
+						for (var i = 0; i < 5; i++) {
+							var dir = point_direction(x, y - 8, global.playerPosX, global.playerPosY - 5);
+							var newDir = random_range(dir - 15, dir + 15);
+								
+							var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objShotgun_Bullet);
+							
+							with (attack) {
+								direction = newDir;
+								image_angle = newDir;
+								bulletDamage = other.mobDamage;
+								speed = random_range(2, 3);
+							}
+						}
+
+							
+						isAttacked = true;
+						alarm[2] = 60;
 					}
 				}
 			}
 		}
+	}
 }
 
 x = clamp(x, 168, room_width - 168);

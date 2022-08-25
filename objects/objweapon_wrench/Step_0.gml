@@ -1,4 +1,5 @@
 /// @description Weapon.State
+depth = -y;
 
 // Отражение спрайта в зависимости от состояния игрока и курсора в objCharacter_Base
 if (global.flipCharacter == -1) {

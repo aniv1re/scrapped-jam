@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"89413fab-4f50-4c05-b063-d74605ddd2a2","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"89413fab-4f50-4c05-b063-d74605ddd2a2","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"LayerId":{"name":"55aa04c7-c5c5-493f-aa6b-5f9197e9772a","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprBotGunner_Gun","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"resourceVersion":"1.0","name":"89413fab-4f50-4c05-b063-d74605ddd2a2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"46afdb01-55a2-4f83-b63c-23b2dd9743fa","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"46afdb01-55a2-4f83-b63c-23b2dd9743fa","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"LayerId":{"name":"b42ab95e-fc1d-43d3-a03d-875f8e1ea313","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprBotGunner_Gun","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"resourceVersion":"1.0","name":"46afdb01-55a2-4f83-b63c-23b2dd9743fa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprBotGunner_Gun","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b741a366-ed3d-48c2-920b-e9835bd535df","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"89413fab-4f50-4c05-b063-d74605ddd2a2","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"80ce5122-6e38-454e-94d5-e2b14ae557c3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"46afdb01-55a2-4f83-b63c-23b2dd9743fa","path":"sprites/sprBotGunner_Gun/sprBotGunner_Gun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,7 +54,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 1,
+    "xorigin": 2,
     "yorigin": 3,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"55aa04c7-c5c5-493f-aa6b-5f9197e9772a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b42ab95e-fc1d-43d3-a03d-875f8e1ea313","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BotWeapons",
-    "path": "folders/Sprites/Bot/BotWeapons.yy",
+    "name": "LVL0",
+    "path": "folders/Sprites/Bot/BotWeapons/LVL0.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBotGunner_Gun",

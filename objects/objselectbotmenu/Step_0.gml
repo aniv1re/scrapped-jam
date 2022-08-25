@@ -1,6 +1,26 @@
+if (unlockState) {
+	image_index = 1;
+	
+	switch (upgradeState) {
+		case 0:
+			image_index = 1;
+			break;
+		case 1:
+			image_index = 2;
+			break;
+		case 2:
+			image_index = 3;
+			break;
+	}
+}
+
+
+
 if (position_meeting(mouse_x, mouse_y, id))
 {
-	isOpen = true;
+	if (unlockState) {
+		isOpen = true;
+	}
 	//cursor_sprite = sprCursorSelect_1;
 }
 else {
@@ -56,7 +76,7 @@ if (isSelected) {
 if (!global.isBuilding) {
 	if (mouse_check_button_pressed(mb_left))
 	{
-		if (position_meeting(mouse_x, mouse_y, id))
+		if (position_meeting(mouse_x, mouse_y, id) && unlockState)
 		{
 			global.isBuilding = true;
 			isSelected = true;
