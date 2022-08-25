@@ -28,12 +28,11 @@ if (!isOpen && point_in_circle(global.playerPosX, global.playerPosY, x, y, openA
 		});
 	}
 	
-	if (!isBlueprintDropped) {
+	if (bluePrintsLoot == 1) {
 		instance_create_layer(x, y, "OBJ_Drop", objDrop_Blueprint, {
 			image_index : irandom_range(1, 10),
 			direction : irandom(360),
 			speed : random_range(1, 3)
 		});
-		isBlueprintDropped = true;
 	}
 }

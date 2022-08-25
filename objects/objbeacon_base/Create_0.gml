@@ -10,6 +10,8 @@ chests = 3;
 sprActivated = 0;
 sprActive = 0;
 
+isBLDropped = true;
+
 alarm[0] = 60;
 
 instance_create_layer(x, y, "OBJ_Shadows", objLarge_Shadow);

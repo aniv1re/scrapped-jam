@@ -48,6 +48,7 @@
     {"id":{"name":"objEnemy_Spawner","path":"objects/objEnemy_Spawner/objEnemy_Spawner.yy",},"order":0,},
     {"id":{"name":"sprTileSet_Shadows","path":"sprites/sprTileSet_Shadows/sprTileSet_Shadows.yy",},"order":3,},
     {"id":{"name":"objBotFly_Gun_LVL2","path":"objects/objBotFly_Gun_LVL2/objBotFly_Gun_LVL2.yy",},"order":0,},
+    {"id":{"name":"objChest_Beacon_WithBlueprint","path":"objects/objChest_Beacon_WithBlueprint/objChest_Beacon_WithBlueprint.yy",},"order":2,},
     {"id":{"name":"sprTipInfo_ActivateBeacon","path":"sprites/sprTipInfo_ActivateBeacon/sprTipInfo_ActivateBeacon.yy",},"order":2,},
     {"id":{"name":"sprWeapon_Bot_Grenade","path":"sprites/sprWeapon_Bot_Grenade/sprWeapon_Bot_Grenade.yy",},"order":7,},
     {"id":{"name":"sprCharacterBase","path":"sprites/sprCharacterBase/sprCharacterBase.yy",},"order":0,},

@@ -7,8 +7,6 @@ wiresLoot = 0;
 battareisLoot = 0;
 bluePrintsLoot = 0;
 
-isBlueprintDropped = false;
-
 image_speed = 0;
 
 instance_create_layer(x, y, "OBJ_Shadows", objShadow);
