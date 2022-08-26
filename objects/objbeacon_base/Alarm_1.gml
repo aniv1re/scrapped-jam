@@ -8,7 +8,7 @@ if (chests > 0) {
 		spawnCoordX = x + lengthdir_x(distance, dir);
 		spawnCoordY = y + lengthdir_y(distance, dir);
 
-		if (!place_meeting(spawnCoordX, spawnCoordY, objChest_Beacon) && point_in_circle(spawnCoordX, spawnCoordY, x, y, spawnChestArea)) {
+		if (position_empty(spawnCoordX, spawnCoordY) && point_in_circle(spawnCoordX, spawnCoordY, x, y, spawnChestArea)) {
 			instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_FX", objChestSpawn_FX);
 			
 			if (isBLDropped) {

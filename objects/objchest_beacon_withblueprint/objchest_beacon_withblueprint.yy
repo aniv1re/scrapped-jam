@@ -3,7 +3,7 @@
     "name": "sprChest_Beacon",
     "path": "sprites/sprChest_Beacon/sprChest_Beacon.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

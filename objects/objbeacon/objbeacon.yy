@@ -3,7 +3,7 @@
     "name": "sprBeacon_Active",
     "path": "sprites/sprBeacon_Active/sprBeacon_Active.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

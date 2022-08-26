@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "BotWeapons",
-    "path": "folders/1 - Objects/BotsEngine/BotWeapons.yy",
+    "name": "UpgradeLevel0",
+    "path": "folders/1 - Objects/BotsEngine/BotWeapons/UpgradeLevel0.yy",
   },
   "resourceVersion": "1.0",
   "name": "objBotMachinegun_Gun",
