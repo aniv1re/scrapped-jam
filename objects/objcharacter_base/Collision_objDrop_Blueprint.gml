@@ -1,4 +1,5 @@
 if (!other.isLocked) {
+	scrSound(sfxLoot_Blueprint, 1);
 	randomize();
 	
 	if (objCardBotMachinegun_Icon.upgradeState == 2 &&

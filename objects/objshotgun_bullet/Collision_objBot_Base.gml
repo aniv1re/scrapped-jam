@@ -5,6 +5,7 @@ if (!other.isDamaged) {
 	alarm[1] = 30;
 	isDamaged = true;
 	other.botHealth -= bulletDamage;
+	scrSound(sfxBot_Hit, 1);
 }
 
 instance_destroy();

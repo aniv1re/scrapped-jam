@@ -8,5 +8,6 @@ if (!other.isDamaged) {
 	show_debug_message(other.botHealth);
 }
 
+scrSound(sfxEnemy_Death_Small, 1);
 instance_destroy(shadowObj);
 instance_destroy();

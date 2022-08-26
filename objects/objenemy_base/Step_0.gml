@@ -3,6 +3,9 @@
 depth = -y;
 
 if (mobHealth <= 0) {
+	if (object_index == objEnemy_Seeker) scrSound(sfxEnemy_Death_Medium, 1);
+	if (object_index == objEnemy_Splasher) scrSound(sfxEnemy_Death_Large, 1);
+	if (object_index == objEnemy_Shotgun) scrSound(sfxEnemy_Death_Large, 1);
 	instance_destroy(shadowObj);
 	instance_destroy();
 } 
@@ -111,6 +114,7 @@ if (currentState == stateEnemy.attack) {
 						image_yscale = 0.5;
 					
 						if (instance_exists(nearestBot)) {
+							scrSound(sfxEnemy_Splasher, 1);
 							var angle = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
 							for (var i = 0; i < 8; i++) {
 								var bullet = instance_create_layer(x, y, "OBJ_Layer", objSplasher_Bullet);
@@ -134,8 +138,9 @@ if (currentState == stateEnemy.attack) {
 					if (!isAttacked) {
 						image_xscale = 1.5 * flip;
 						image_yscale = 0.5;
-					
+						
 						if (instance_exists(nearestBot)) {
+							scrSound(sfxEnemy_Shootgun, 1);
 							for (var i = 0; i < 5; i++) {
 								var dir = point_direction(x, y, nearestBot.x, nearestBot.y - 4);
 								var newDir = random_range(dir - 15, dir + 15);
@@ -184,7 +189,8 @@ if (currentState == stateEnemy.attack) {
 						if (!isAttacked) {
 							image_xscale = 1.5 * flip;
 							image_yscale = 0.5;
-					
+							
+							scrSound(sfxEnemy_Splasher, 1);
 							var angle = point_direction(x, y, global.playerPosX, global.playerPosY - 5);
 							for (var i = 0; i < 8; i++) {
 								var bullet = instance_create_layer(x, y, "OBJ_Layer", objSplasher_Bullet);
@@ -207,7 +213,8 @@ if (currentState == stateEnemy.attack) {
 					if (!isAttacked) {
 						image_xscale = 1.5 * flip;
 						image_yscale = 0.5;
-					
+						
+						scrSound(sfxEnemy_Shootgun, 1);
 						for (var i = 0; i < 5; i++) {
 							var dir = point_direction(x, y - 8, global.playerPosX, global.playerPosY - 5);
 							var newDir = random_range(dir - 15, dir + 15);

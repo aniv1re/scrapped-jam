@@ -12,6 +12,7 @@ if (currentBotType != botType.gunner) {
 }
 
 if (botHealth <= 0) {
+	scrSound(sfxBot_Death, 1);
 	instance_destroy(shadowObj);
 	instance_destroy();	
 }
@@ -197,7 +198,8 @@ if (currentState == stateBot.move) {
 						}
 				
 						var projId = instance_create_layer(gunId.x, gunId.y - 4, "OBJ_Layer", objWeapon_GunProj, { image_angle : point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y) });
-	
+						scrSound(sfxBot_Gunner, 1);
+						
 						with (projId) {
 							direction = point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y);
 							speed = 3;
@@ -222,6 +224,7 @@ if (currentState == stateBot.move) {
 						}
 
 						var projId = instance_create_layer(gunId.x, gunId.y, "OBJ_Layer", objWeapon_MachinegunProj, { image_angle : point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y) });
+						scrSound(sfxBot_Machinegun, 1);
 						
 						with (projId) {
 							isFired = true;
@@ -248,6 +251,7 @@ if (currentState == stateBot.move) {
 						}
 
 						var projId = instance_create_layer(gunId.x, gunId.y, "OBJ_Layer", objWeapon_MachinegunProj, { image_angle : point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y) });
+						scrSound(sfxBot_Fly, 1);
 						
 						with (projId) {
 							direction = point_direction(x, y, mouse_x, mouse_y);
@@ -273,6 +277,7 @@ if (currentState == stateBot.move) {
 						}
 
 						var projId = instance_create_layer(gunId.x, gunId.y, "OBJ_Layer", objWeapon_Grenade, { image_angle : point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y) });
+						scrSound(sfxBot_Mortyr, 1);
 						
 						with (projId) {
 							direction = point_direction(x, y, getNearestEnemy.x, getNearestEnemy.y);

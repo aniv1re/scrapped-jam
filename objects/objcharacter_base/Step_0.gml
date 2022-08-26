@@ -3,6 +3,7 @@
 depth = -y;
 
 if (characterHealth <= 0) {
+	scrSound(sfxCharacter_Death, 1);
 	game_end();
 }
 
@@ -63,6 +64,7 @@ if (mouse_check_button(mb_left) && !isAttacked && !global.isBuilding && !positio
 	image_yscale = 0.5;
 						
 	var inst = instance_create_layer(x, y - 4, "OBJ_Layer", objWeaponWrench_Swoosh);
+	scrSound(sfxCharacter_Attack, 1);
 	
 	with (inst) {
 		direction =  point_direction(x, y, mouse_x, mouse_y);

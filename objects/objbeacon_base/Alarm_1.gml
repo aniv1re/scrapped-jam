@@ -10,6 +10,7 @@ if (chests > 0) {
 
 		if (position_empty(spawnCoordX, spawnCoordY) && point_in_circle(spawnCoordX, spawnCoordY, x, y, spawnChestArea)) {
 			instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_FX", objChestSpawn_FX);
+			scrSound(sfxChest_Spawn, 1);
 			
 			if (isBLDropped) {
 				instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Beacons", objChest_Beacon_WithBlueprint);

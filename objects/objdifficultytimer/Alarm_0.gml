@@ -16,6 +16,7 @@ if (global.difficultyTimerSeconds == 0 && global.currentLevelDifficulty <= 5) {
 	}
 	else if (global.difficultyTimerMinutes == 0 && global.difficultyTimerSeconds == 0) {
 		global.currentLevelDifficulty++;
+		scrSound(sfxDifficultyUp, 1);
 		
 		switch(global.currentLevelDifficulty) {
 			case 2:

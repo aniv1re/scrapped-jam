@@ -1,3 +1,5 @@
+scrSound(sfxBot_Shield_Build, 1);
+
 botHealth = 1;
 isDamaged = false;
 isDamageBlink = false;

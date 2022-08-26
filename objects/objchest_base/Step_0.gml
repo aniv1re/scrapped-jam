@@ -7,6 +7,7 @@ if (distance_to_object(objCharacter_Base) >= 200 && isOpen) {
 
 if (!isOpen && point_in_circle(global.playerPosX, global.playerPosY, x, y, openArea)) {
 	isOpen = true;
+	scrSound(sfxChest_Open, 1);
 	image_speed = 1;
 	
 	for (var i = 0; i < scrapLoot; i++) {

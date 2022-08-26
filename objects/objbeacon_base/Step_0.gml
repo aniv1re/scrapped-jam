@@ -7,6 +7,7 @@ if (isActivatedFully && !collision_circle(x, y, 180, objCharacter_Base, 0, 0)) {
 
 if (point_in_circle(global.playerPosX, global.playerPosY, x, y, activateArea)) {
 	if (keyboard_check_pressed(ord("E")) && !isActivated && !isCharged) {
+		scrSound(sfxBeacon_Start, 1);
 		isActivated = true;
 		sprite_index = sprActivated;
 		beaconId = instance_create_layer(x, y, "OBJ_Beacons_Area", objBeacon_Area);
