@@ -4,9 +4,9 @@ if (chests > 0) {
 	
 	while (!isGen) {
 		var dir = random_range(0, 359);
-		var distance = irandom_range(x, spawnChestArea);
-		spawnCoordX = x + lengthdir_x(distance, dir);
-		spawnCoordY = y + lengthdir_y(distance, dir);
+		//var distance = irandom_range(x, spawnChestArea);
+		spawnCoordX = x + lengthdir_x(spawnChestArea, dir);
+		spawnCoordY = y + lengthdir_y(spawnChestArea, dir);
 
 		if (position_empty(spawnCoordX, spawnCoordY) && point_in_circle(spawnCoordX, spawnCoordY, x, y, spawnChestArea)) {
 			instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_FX", objChestSpawn_FX);

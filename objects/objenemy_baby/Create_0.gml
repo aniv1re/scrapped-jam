@@ -1,6 +1,6 @@
 event_inherited();
 
-moveSpeed = 3;
+moveSpeed = random_range(2.5, 2.8);
 mobHealth = 1;
 mobDamage = 1;
 knockbackReduce = 1.5;

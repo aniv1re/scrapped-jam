@@ -9,9 +9,12 @@ chests = 3;
 
 sprActivated = 0;
 sprActive = 0;
+isActivatedFully = false;
 
 isBLDropped = true;
 
+beaconId = 0;
+
 alarm[0] = 60;
 
-instance_create_layer(x, y, "OBJ_Shadows", objLarge_Shadow);
+shadow = instance_create_layer(x, y, "OBJ_Shadows", objLarge_Shadow);

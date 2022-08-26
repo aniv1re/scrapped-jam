@@ -11,8 +11,6 @@ switch (currentEnemyType) {
 		break;
 }
 
-global.currentPlayerExpPoints++;
-
 if (irandom(1) > .5) {
 	for (var i = 0; i < dropScrap; i++) {
 	    var createdInstId = instance_create_layer(x, y, "OBJ_Drop", objDrop_Scrap);

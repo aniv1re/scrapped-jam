@@ -1,4 +1,9 @@
+depth = -y;
 speed -= speed * .1;
+
+if (distance_to_object(objCharacter_Base) >= 200) {
+	instance_destroy();
+}
 
 if (speed <= 0) {
 	isFullDropped = true;

@@ -18,6 +18,8 @@ function scrRollUpgrade(){
 						currentBot = objBot_Gunner_LVL2;
 					}
 				}
+				
+				instance_create_layer(x, y, "OBJ_Menu", objUpdradeOrUnlock);
 			}
 			isUpgradeDone = true;
 		}
@@ -33,6 +35,8 @@ function scrRollUpgrade(){
 				else if (upgradeState == 2) {
 					currentBot = objBot_Machinegun_LVL2;
 				}
+				
+				instance_create_layer(x, y, "OBJ_Menu", objUpdradeOrUnlock);
 			}
 			isUpgradeDone = true;
 		}
@@ -48,6 +52,8 @@ function scrRollUpgrade(){
 				else if (upgradeState == 2) {
 					currentBot = objBot_Shield_LVL2;
 				}
+				
+				instance_create_layer(x, y, "OBJ_Menu", objUpdradeOrUnlock);
 			}
 			isUpgradeDone = true;
 		}
@@ -63,6 +69,8 @@ function scrRollUpgrade(){
 				else if (upgradeState == 2) {
 					currentBot = objBot_Fly_LVL2;
 				}
+				
+				instance_create_layer(x, y, "OBJ_Menu", objUpdradeOrUnlock);
 			}
 			isUpgradeDone = true;
 		}
@@ -78,6 +86,8 @@ function scrRollUpgrade(){
 				else if (upgradeState == 2) {
 					currentBot = objBot_Mortyr_LVL2;
 				}
+				
+				instance_create_layer(x, y, "OBJ_Menu", objUpdradeOrUnlock);
 			}
 			isUpgradeDone = true;
 		}

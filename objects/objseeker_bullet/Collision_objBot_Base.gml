@@ -5,7 +5,6 @@ if (!other.isDamaged) {
 	alarm[1] = 30;
 	isDamaged = true;
 	other.botHealth -= bulletDamage;
-	show_debug_message(other.botHealth);
 }
 
 instance_destroy();

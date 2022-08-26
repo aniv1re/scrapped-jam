@@ -1,5 +1,10 @@
 depth = -y;
 
+if (distance_to_object(objCharacter_Base) >= 200 && isOpen) {
+	instance_destroy(shadow);
+	instance_destroy();
+}
+
 if (!isOpen && point_in_circle(global.playerPosX, global.playerPosY, x, y, openArea)) {
 	isOpen = true;
 	image_speed = 1;

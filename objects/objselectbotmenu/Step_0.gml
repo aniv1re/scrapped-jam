@@ -1,3 +1,5 @@
+depth = -2000;
+
 if (unlockState) {
 	image_index = 1;
 	

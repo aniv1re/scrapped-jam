@@ -18,6 +18,8 @@ global.shieldHP = 24;
 global.shieldHPDefault = global.shieldHP;
 global.shieldObj = 0;
 
+global.currentLevelDifficulty = 1;
+
 //global.shieldRegeneration = 1;
 //alarm[0] = 900;
 
