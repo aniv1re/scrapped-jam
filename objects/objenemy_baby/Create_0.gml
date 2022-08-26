@@ -5,6 +5,7 @@ mobHealth = 1;
 mobDamage = 1;
 knockbackReduce = 1.5;
 aggroRadius = 500;
+attackRadius = -1;
 currentEnemyType = enemyType.baby;
 spriteIdle = sprEnemy_Baby_Idle;
 spriteMove = sprEnemy_Baby_Idle;

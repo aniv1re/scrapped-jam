@@ -8,8 +8,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sgSounds",
+    "path": "audiogroups/sgSounds",
   },
   "soundFile": "sfxcharacter_spawn.wav",
   "duration": 3.469138,

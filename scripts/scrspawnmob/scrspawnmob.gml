@@ -1,4 +1,4 @@
-/// 
+/// Spawn mob
 
 /// @param currentDifficulty
 function scrSpawnMob(currentDifficulty){
@@ -24,14 +24,14 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Seeker) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
 						isMobSpawned_Seeker = true;
-						alarm[1] = 120;
+						alarm[1] = 60;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 180;
+						alarm[2] = 90;
 						
 						show_debug_message("isSpawned")
 					}
@@ -40,37 +40,14 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Seeker) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
 						isMobSpawned_Seeker = true;
-						alarm[1] = 120;
+						alarm[1] = 90;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 120;
-						
-						show_debug_message("isSpawned")
-					}
-					if (!isMobSpawned_Splasher) {
-						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
-						isMobSpawned_Splasher = true;
-						alarm[3] = 360;
-						
-						show_debug_message("isSpawned")
-					}
-					break;
-			case 4: 
-					if (!isMobSpawned_Seeker) {
-						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
-						isMobSpawned_Seeker = true;
-						alarm[1] = 120;
-						
-						show_debug_message("isSpawned")
-					}
-					if (!isMobSpawned_Baby) {
-						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
-						isMobSpawned_Baby = true;
-						alarm[2] = 180;
+						alarm[2] = 90;
 						
 						show_debug_message("isSpawned")
 					}
@@ -81,10 +58,33 @@ function scrSpawnMob(currentDifficulty){
 						
 						show_debug_message("isSpawned")
 					}
+					break;
+			case 4: 
+					if (!isMobSpawned_Seeker) {
+						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
+						isMobSpawned_Seeker = true;
+						alarm[1] = 60;
+						
+						show_debug_message("isSpawned")
+					}
+					if (!isMobSpawned_Baby) {
+						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
+						isMobSpawned_Baby = true;
+						alarm[2] = 60;
+						
+						show_debug_message("isSpawned")
+					}
+					if (!isMobSpawned_Splasher) {
+						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
+						isMobSpawned_Splasher = true;
+						alarm[3] = 160;
+						
+						show_debug_message("isSpawned")
+					}
 					if (!isMobSpawned_Shotgun) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Shotgun);
 						isMobSpawned_Shotgun = true;
-						alarm[4] = 240;
+						alarm[4] = 160;
 						
 						show_debug_message("isSpawned")
 					}
@@ -93,33 +93,32 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Seeker) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
 						isMobSpawned_Seeker = true;
-						alarm[1] = 120;
+						alarm[1] = 60;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 120;
+						alarm[2] = 60;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Splasher) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
 						isMobSpawned_Splasher = true;
-						alarm[3] = 180;
+						alarm[3] = 120;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Shotgun) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Shotgun);
 						isMobSpawned_Shotgun = true;
-						alarm[4] = 180;
+						alarm[4] = 120;
 						
 						show_debug_message("isSpawned")
 					}
 					break;
 		}
 	}
-	
 }

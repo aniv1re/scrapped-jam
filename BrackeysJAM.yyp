@@ -51,6 +51,7 @@
     {"id":{"name":"sprBotHelicopter_CardIcon","path":"sprites/sprBotHelicopter_CardIcon/sprBotHelicopter_CardIcon.yy",},"order":3,},
     {"id":{"name":"s_enemy_death_large","path":"sprites/s_enemy_death_large/s_enemy_death_large.yy",},"order":6,},
     {"id":{"name":"sfxRepair","path":"sounds/sfxRepair/sfxRepair.yy",},"order":32,},
+    {"id":{"name":"sprCharacter_Dead","path":"sprites/sprCharacter_Dead/sprCharacter_Dead.yy",},"order":2,},
     {"id":{"name":"sprWeapon_Bullet_Large","path":"sprites/sprWeapon_Bullet_Large/sprWeapon_Bullet_Large.yy",},"order":1,},
     {"id":{"name":"sprBotGunnerLVL2_Move","path":"sprites/sprBotGunnerLVL2_Move/sprBotGunnerLVL2_Move.yy",},"order":0,},
     {"id":{"name":"sfxBot_Hit","path":"sounds/sfxBot_Hit/sfxBot_Hit.yy",},"order":3,},

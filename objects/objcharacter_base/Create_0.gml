@@ -33,5 +33,7 @@ attackColldown = 2;
 isAttacked = false;
 isDamaged = false;
 isDamageBlink = false;
+isDead = false;
 
 shadowObj = instance_create_layer(x, y, "OBJ_Shadows", objShadow);
+weapon = instance_create_layer(x, y, "OBJ_Layer", objWeapon_Wrench);

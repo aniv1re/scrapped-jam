@@ -1,6 +1,6 @@
 draw_self();
 
-if (isDamaged) {
+if (isDamaged && !isDead) {
 	alarm[2] = 8;
 	draw_sprite(sprBubble, 0, x, y - 6);
 }

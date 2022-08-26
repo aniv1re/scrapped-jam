@@ -8,8 +8,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sgSounds",
+    "path": "audiogroups/sgSounds",
   },
   "soundFile": "sfxenemy_shootgun.wav",
   "duration": 0.321519,

@@ -97,12 +97,12 @@ for (var i = 0; i < global.currentLevelDifficulty; i++) {
 }
 
 // diff timer
-draw_text(global.playerPosX + 121, global.playerPosY + 82, global.difficultyTimerMinutes mod 100 div 10);
-draw_text(global.playerPosX + 126, global.playerPosY + 82, global.difficultyTimerMinutes mod 10);
+draw_text(global.playerPosX + 121, global.playerPosY + 82, global.difficultyTimerSeconds div 600);
+draw_text(global.playerPosX + 126, global.playerPosY + 82, ceil(global.difficultyTimerSeconds div 60 mod 10));
 
 draw_sprite(sprDifficulty_Timer, 0, global.playerPosX + 121, global.playerPosY + 82);
 
-draw_text(global.playerPosX + 135, global.playerPosY + 82, global.difficultyTimerSeconds mod 100 div 10);
+draw_text(global.playerPosX + 135, global.playerPosY + 82, global.difficultyTimerSeconds mod 60 div 10);
 draw_text(global.playerPosX + 140, global.playerPosY + 82, global.difficultyTimerSeconds mod 10);
 
 // global timer
