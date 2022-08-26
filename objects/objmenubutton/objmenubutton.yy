@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprMenu_Start",
-    "path": "sprites/sprMenu_Start/sprMenu_Start.yy",
+    "name": "sprButton_Start",
+    "path": "sprites/sprButton_Start/sprButton_Start.yy",
   },
   "solid": false,
   "visible": true,

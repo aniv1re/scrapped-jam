@@ -7,7 +7,10 @@ if (owner_id.is_active == true) {
 	if (position_meeting(mouse_x, mouse_y, id)) {
 		image_index = 1;
 		if (mouse_check_button(mb_left)) image_index = 2;
-		if (mouse_check_button_released(mb_left)) is_pressed = true;
+		if (mouse_check_button_released(mb_left)) {
+			is_pressed = true;
+			scrSound(sfxButton, 0.75 + random_range(0, 0.5));
+		}
 	}
 	else image_index = 0;
 	
@@ -19,11 +22,33 @@ if (owner_id.is_active == true) {
 				break;
 			}
 			case button_menu_type.options: {
-				// Опции, лол...
+				owner_id.y_offset = -180;
 				break;
 			}
 			case button_menu_type.quit: {
 				game_end();
+				break;
+			}
+			case button_menu_type.back: {
+				owner_id.y_offset = 0;
+				break;
+			}
+			case button_menu_type.volumeup: {
+				global.volume = clamp(global.volume + 10, 0, 100);
+				audio_group_set_gain(global.audio_group_id, global.volume / 100, 0);
+				break;
+			}
+			case button_menu_type.volumedown: {
+				global.volume = clamp(global.volume - 10, 0, 100);
+				audio_group_set_gain(global.audio_group_id, global.volume / 100, 0);
+				break;
+			}
+			case button_menu_type.scaleup: {
+				global.scale = clamp(global.scale + 1, 2, 4);
+				break;
+			}
+			case button_menu_type.scaledown: {
+				global.scale = clamp(global.scale - 1, 2, 4);
 				break;
 			}
 		}
