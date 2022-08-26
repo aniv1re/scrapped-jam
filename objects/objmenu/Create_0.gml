@@ -75,13 +75,6 @@ button_scaleup_id = instance_create_layer(x, y, "OBJ_Menu", objMenuButton, {
 	x_offset : 196,
 	y_offset : 98 + 180
 });
-button_scaledown_id = instance_create_layer(x, y, "OBJ_Menu", objMenuButton, {
-	sprite_index : sprButton_Left,
-	owner_id : id,
-	type : button_menu_type.scaledown,
-	x_offset : 104,
-	y_offset : 98 + 180
-});
 
 /*
 button_start_id = instance_create_layer(x, y, "OBJ_Menu", objMenuButton_Start, {

@@ -44,11 +44,8 @@ if (owner_id.is_active == true) {
 				break;
 			}
 			case button_menu_type.scaleup: {
-				global.scale = clamp(global.scale + 1, 2, 4);
-				break;
-			}
-			case button_menu_type.scaledown: {
-				global.scale = clamp(global.scale - 1, 2, 4);
+				// Кнопку сломали :C
+				instance_create_depth(owner_id.x + random(3) - 1, owner_id.y + random(3) - 1 + 180, depth - 1, objMenu_Spark);
 				break;
 			}
 		}
