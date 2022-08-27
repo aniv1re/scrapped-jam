@@ -31,7 +31,7 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 90;
+						alarm[2] = 180;
 						
 						show_debug_message("isSpawned")
 					}
@@ -40,14 +40,14 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Seeker) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
 						isMobSpawned_Seeker = true;
-						alarm[1] = 90;
+						alarm[1] = 60;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 90;
+						alarm[2] = 160;
 						
 						show_debug_message("isSpawned")
 					}
@@ -63,28 +63,28 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Seeker) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
 						isMobSpawned_Seeker = true;
-						alarm[1] = 60;
+						alarm[1] = 50;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 60;
+						alarm[2] = 120;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Splasher) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
 						isMobSpawned_Splasher = true;
-						alarm[3] = 160;
+						alarm[3] = 240;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Shotgun) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Shotgun);
 						isMobSpawned_Shotgun = true;
-						alarm[4] = 160;
+						alarm[4] = 240;
 						
 						show_debug_message("isSpawned")
 					}
@@ -93,28 +93,28 @@ function scrSpawnMob(currentDifficulty){
 					if (!isMobSpawned_Seeker) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Seeker);
 						isMobSpawned_Seeker = true;
-						alarm[1] = 60;
+						alarm[1] = 50;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Baby) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objBabySpawner);
 						isMobSpawned_Baby = true;
-						alarm[2] = 60;
+						alarm[2] = 100;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Splasher) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Splasher);
 						isMobSpawned_Splasher = true;
-						alarm[3] = 120;
+						alarm[3] = 180;
 						
 						show_debug_message("isSpawned")
 					}
 					if (!isMobSpawned_Shotgun) {
 						instance_create_layer(spawnCoordX, spawnCoordY, "OBJ_Layer", objEnemy_Shotgun);
 						isMobSpawned_Shotgun = true;
-						alarm[4] = 120;
+						alarm[4] = 180;
 						
 						show_debug_message("isSpawned")
 					}

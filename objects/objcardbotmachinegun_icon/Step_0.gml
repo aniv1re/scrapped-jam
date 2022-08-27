@@ -1,4 +1,10 @@
 event_inherited();
 
-x = global.playerPosX - 156;
-y = global.playerPosY - 64;
+if (objCharacter_Base.isDead) {
+	x = global.playerPosX - 200;
+	y = global.playerPosY - 64;
+}
+else {
+	x = global.playerPosX - 156;
+	y = global.playerPosY - 64;
+}

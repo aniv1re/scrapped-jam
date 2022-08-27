@@ -227,6 +227,7 @@
     {"id":{"name":"sprFontStats","path":"sprites/sprFontStats/sprFontStats.yy",},"order":0,},
     {"id":{"name":"objBot_Machinegun_LVL2","path":"objects/objBot_Machinegun_LVL2/objBot_Machinegun_LVL2.yy",},"order":2,},
     {"id":{"name":"scrRollUpgrade","path":"scripts/scrRollUpgrade/scrRollUpgrade.yy",},"order":1,},
+    {"id":{"name":"sprGameOver","path":"sprites/sprGameOver/sprGameOver.yy",},"order":3,},
     {"id":{"name":"objBotSpawn","path":"objects/objBotSpawn/objBotSpawn.yy",},"order":4,},
     {"id":{"name":"sprHealthBar","path":"sprites/sprHealthBar/sprHealthBar.yy",},"order":1,},
     {"id":{"name":"sprBotGunner_Move","path":"sprites/sprBotGunner_Move/sprBotGunner_Move.yy",},"order":2,},

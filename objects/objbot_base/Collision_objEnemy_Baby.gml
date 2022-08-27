@@ -5,7 +5,6 @@ if (!isDamaged) {
 	alarm[1] = 30;
 	isDamaged = true;
 	botHealth -= other.mobDamage;
-	//show_debug_message(other.botHealth);
 }
 
 scrSound(sfxEnemy_Death_Small, 1);

@@ -33,41 +33,49 @@ else {
 if (isSelected) {
 	if (!collision_circle(mouse_x, mouse_y, 15, objCollisionBase, 0, 1) && point_in_circle(mouse_x, mouse_y, global.playerPosX, global.playerPosY, buildRadius)) {
 		isColliding = false;
-		if (mouse_check_button_pressed(mb_left))
-		{
-				if (isRequiredWires && isRequiredBatterys) {
-					if (global.scrap >= botBuildPriceScrap && global.wires >= botBuildPriceWires && global.batterys >= botBuildPriceBatterys) {
-						global.scrap -= botBuildPriceScrap;
-						global.wires -= botBuildPriceWires;
-						global.batterys -= botBuildPriceBatterys;
+		if (global.scrap >= botBuildPriceScrap && global.wires >= botBuildPriceWires && global.batterys >= botBuildPriceBatterys) {
+			if (mouse_check_button_pressed(mb_left))
+			{
+					if (isRequiredWires && isRequiredBatterys) {
+						if (global.scrap >= botBuildPriceScrap && global.wires >= botBuildPriceWires && global.batterys >= botBuildPriceBatterys) {
+							global.scrap -= botBuildPriceScrap;
+							global.wires -= botBuildPriceWires;
+							global.batterys -= botBuildPriceBatterys;
 						
-						instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
-						instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", currentBot);
-					}
-				}
-				else if (isRequiredWires) {
-					if (global.scrap >= botBuildPriceScrap && global.wires >= botBuildPriceWires) {
-						global.scrap -= botBuildPriceScrap;
-						global.wires -= botBuildPriceWires;
-						
-						if (currentBot == objBot_Shield && instance_find(objBot_Shield, 0)) {
-							global.shieldHP = global.shieldHPDefault;
-							instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
-						}
-						else {
 							instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
 							instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", currentBot);
 						}
 					}
-				}
-				else {
-					if (global.scrap >= botBuildPriceScrap) {
-						global.scrap -= botBuildPriceScrap;
+					else if (isRequiredWires) {
+						if (global.scrap >= botBuildPriceScrap && global.wires >= botBuildPriceWires) {
+							global.scrap -= botBuildPriceScrap;
+							global.wires -= botBuildPriceWires;
 						
-						instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
-						instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", currentBot);
+							if (currentBot == objBot_Shield && instance_find(objBot_Shield, 0)) {
+								global.shieldHP = global.shieldHPDefault;
+								instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
+							}
+							else {
+								instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
+								instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", currentBot);
+							}
+						}
 					}
-				}
+					else {
+						if (global.scrap >= botBuildPriceScrap) {
+							global.scrap -= botBuildPriceScrap;
+						
+							instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", objBotSpawn);
+							instance_create_layer(mouse_x, mouse_y, "OBJ_Layer", currentBot);
+						}
+					}
+			}
+		}
+		else {
+			isSelected = false;
+			global.selectedBotId = 0;
+			cursor_sprite = sprCursorAttack_1;
+			global.isBuilding = false;
 		}
 	}
 	else {
@@ -80,10 +88,12 @@ if (!global.isBuilding) {
 	{
 		if (position_meeting(mouse_x, mouse_y, id) && unlockState)
 		{
-			global.isBuilding = true;
-			isSelected = true;
-			global.selectedBotId = object_index;
-			cursor_sprite = sprCursorBuild_1;
+			if (global.scrap >= botBuildPriceScrap && global.wires >= botBuildPriceWires && global.batterys >= botBuildPriceBatterys) {
+				global.isBuilding = true;
+				isSelected = true;
+				global.selectedBotId = object_index;
+				cursor_sprite = sprCursorBuild_1;
+			}
 		}
 	}
 }

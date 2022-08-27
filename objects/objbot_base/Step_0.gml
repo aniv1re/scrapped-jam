@@ -207,7 +207,7 @@ if (currentState == stateBot.move) {
 						}
 	
 						isAttackCooldown = true;
-						alarm[0] = 70;
+						alarm[0] = irandom_range(60, 70);
 					}
 					break;
 				}
@@ -234,7 +234,7 @@ if (currentState == stateBot.move) {
 						}		
 	
 						isAttackCooldown = true;
-						alarm[0] = 10;
+						alarm[0] = irandom_range(10, 20);
 					}
 					break;
 				}
@@ -260,7 +260,7 @@ if (currentState == stateBot.move) {
 						}		
 	
 						isAttackCooldown = true;
-						alarm[0] = 60;
+						alarm[0] = irandom_range(50, 60);
 					}
 					break;
 				}
@@ -286,7 +286,7 @@ if (currentState == stateBot.move) {
 						}		
 	
 						isAttackCooldown = true;
-						alarm[0] = 180;
+						alarm[0] = irandom_range(170, 180);
 					}
 					break;
 				}

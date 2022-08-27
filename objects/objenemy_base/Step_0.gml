@@ -1,5 +1,4 @@
 /// @description Enemy.StateMachine
-
 depth = -y;
 
 if (mobHealth <= 0) {
@@ -78,13 +77,13 @@ if (currentState == stateEnemy.hurt) {
 	
 	currentState = stateEnemy.move;
 }
-	
+
 if (currentState == stateEnemy.attack) {
 	if (instance_exists(nearestBot)) {
 		if (!point_in_circle(nearestBot.x, nearestBot.y ,x, y, attackRadius)) {
 				currentState = stateEnemy.move;
 		}
-		else {
+		else if  (!objCharacter_Base.isDead)  {
 			sprite_index = spriteIdle;
 			
 			switch (currentEnemyType) {
@@ -104,7 +103,7 @@ if (currentState == stateEnemy.attack) {
 							}		
 							
 							isAttacked = true;
-							alarm[2] = 60;
+							alarm[2] = irandom_range(50, 60);
 						}
 					}
 					break;
@@ -130,7 +129,7 @@ if (currentState == stateEnemy.attack) {
 							}
 							
 							isAttacked = true;
-							alarm[2] = 160;
+							alarm[2] = irandom_range(150, 160);
 						}
 					}
 					break;
@@ -155,18 +154,21 @@ if (currentState == stateEnemy.attack) {
 								}
 							}
 							isAttacked = true;
-							alarm[2] = 60;
+							alarm[2] = irandom_range(50, 60);
 						}
 					}
 					break;
 			}
+		}
+		else {
+			sprite_index = spriteIdle;
 		}
 	}
 	else {
 		if (!point_in_circle(global.playerPosX, global.playerPosY ,x, y, attackRadius)) {
 			currentState = stateEnemy.move;
 		}
-		else {
+		else if  (!objCharacter_Base.isDead) {
 			sprite_index = spriteIdle;
 		
 			switch (currentEnemyType) {
@@ -184,7 +186,7 @@ if (currentState == stateEnemy.attack) {
 								bulletDamage = other.mobDamage;
 							}		
 							isAttacked = true;
-							alarm[2] = 60;
+							alarm[2] = irandom_range(50, 60);
 						}
 					}
 				case enemyType.splasher: {
@@ -207,7 +209,7 @@ if (currentState == stateEnemy.attack) {
 							}
 							
 							isAttacked = true;
-							alarm[2] = 160;
+							alarm[2] = irandom_range(150, 160);
 						}
 						break;
 					}
@@ -233,10 +235,13 @@ if (currentState == stateEnemy.attack) {
 
 							
 						isAttacked = true;
-						alarm[2] = 60;
+						alarm[2] = irandom_range(50, 60);
 					}
 				}
 			}
+		}
+		else  {
+			sprite_index = spriteIdle;
 		}
 	}
 }

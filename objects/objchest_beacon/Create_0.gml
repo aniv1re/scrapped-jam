@@ -1,5 +1,5 @@
 event_inherited();
 
 scrapLoot = 35;
-wiresLoot = 10;
-battareisLoot = 5;
+wiresLoot = 15;
+battareisLoot = 2;

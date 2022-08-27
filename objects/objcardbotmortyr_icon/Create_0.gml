@@ -2,9 +2,9 @@ event_inherited();
 
 isOpen = false;
 currentBot = objBot_Mortyr;
-botBuildPriceScrap = 32;
-botBuildPriceWires = 12;
-botBuildPriceBatterys = 1;
+botBuildPriceScrap = 40;
+botBuildPriceWires = 17;
+botBuildPriceBatterys = 2;
 isRequiredWires = true;
 isRequiredBatterys = true;
 

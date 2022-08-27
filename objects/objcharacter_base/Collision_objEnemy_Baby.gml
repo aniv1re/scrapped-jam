@@ -27,5 +27,6 @@ if (!isDead) {
 	instance_destroy(other.id);
 }
 else {
+	instance_destroy(other.shadowObj);
 	instance_destroy(other.id);
 }

@@ -8,3 +8,10 @@ if (global.shieldHP <= 0) {
 	global.isShield = false;
 	instance_destroy(global.shieldObj);
 }
+
+if (objCharacter_Base.isDead) {
+	if (keyboard_check_pressed(vk_space)) {
+		audio_group_unload(global.audio_group_id);
+		game_restart();
+	}
+}

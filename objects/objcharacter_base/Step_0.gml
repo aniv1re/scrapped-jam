@@ -14,6 +14,9 @@ if (characterHealth <= 0 && !isDead) {
 
 if (isDead) {
 	sprite_index = sprCharacter_Dead;
+	
+	image_xscale = scrApproach(image_xscale, global.flipCharacter, 0.05);
+	image_yscale = scrApproach(image_yscale, 1, 0.05);
 }
 else {
 
