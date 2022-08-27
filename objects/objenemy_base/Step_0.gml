@@ -92,6 +92,7 @@ if (currentState == stateEnemy.attack) {
 					if (!isAttacked) {
 						image_xscale = 1.5 * flip;
 						image_yscale = 0.5;
+						scrSound(sfxEnemy_Seeker, 1);
 					
 						if (instance_exists(nearestBot)) {
 							var bullet = instance_create_layer(x, y, "OBJ_Layer", objSeeker_Bullet);
@@ -173,6 +174,7 @@ if (currentState == stateEnemy.attack) {
 						if (!isAttacked) {
 							image_xscale = 1.5 * flip;
 							image_yscale = 0.5;
+							scrSound(sfxEnemy_Seeker, 1);
 					
 							var attack = instance_create_layer(x, y - 4, "OBJ_Layer", objSeeker_Bullet);
 					

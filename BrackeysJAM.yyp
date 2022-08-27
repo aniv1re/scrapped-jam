@@ -260,6 +260,7 @@
     {"id":{"name":"sprTileSet_Floors","path":"sprites/sprTileSet_Floors/sprTileSet_Floors.yy",},"order":2,},
     {"id":{"name":"sfxBot_Laser","path":"sounds/sfxBot_Laser/sfxBot_Laser.yy",},"order":4,},
     {"id":{"name":"sprScrap","path":"sprites/sprScrap/sprScrap.yy",},"order":0,},
+    {"id":{"name":"sfxEnemy_Seeker","path":"sounds/sfxEnemy_Seeker/sfxEnemy_Seeker.yy",},"order":6,},
     {"id":{"name":"objCharacter_Base","path":"objects/objCharacter_Base/objCharacter_Base.yy",},"order":0,},
   ],
   "Options": [
