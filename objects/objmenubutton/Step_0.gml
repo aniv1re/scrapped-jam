@@ -35,12 +35,12 @@ if (owner_id.is_active == true) {
 			}
 			case button_menu_type.volumeup: {
 				global.volume = clamp(global.volume + 10, 0, 100);
-				audio_group_set_gain(global.audio_group_id, global.volume / 100, 0);
+				//audio_group_set_gain(global.audio_group_id, global.volume / 100, 0);
 				break;
 			}
 			case button_menu_type.volumedown: {
 				global.volume = clamp(global.volume - 10, 0, 100);
-				audio_group_set_gain(global.audio_group_id, global.volume / 100, 0);
+				//audio_group_set_gain(global.audio_group_id, global.volume / 100, 0);
 				break;
 			}
 			case button_menu_type.scaleup: {

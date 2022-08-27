@@ -4,8 +4,8 @@ global.playerPosY = objCharacter_Base.y;
 
 global.invisibilityFrameTime = 90;
 
-global.scrap = 0;
-global.wires = 0;
+global.scrap = 20;
+global.wires = 15;
 global.batterys = 0;
 
 cursor_sprite = sprCursorAttack_1;
