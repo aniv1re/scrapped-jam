@@ -14,7 +14,7 @@ if (point_in_circle(global.playerPosX, global.playerPosY, x, y, activateArea)) {
 	}
 }
 
-if (place_meeting(global.playerPosX, global.playerPosY,  objBeacon_Area)) {
+if (position_meeting(global.playerPosX, global.playerPosY,  objBeacon_Area)) {
 	isPlayerEntered = true;
 }
 else {

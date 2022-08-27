@@ -1,5 +1,7 @@
 if (isActivated && isPlayerEntered) {
-	timer--;
+	//if (place_meeting(global.playerPosX, global.playerPosY,  objBeacon_Area)) {
+		timer--;
+	//}
 	
 	if (timer <= 0) {
 		sprite_index = sprActive;
