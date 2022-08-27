@@ -8,7 +8,7 @@ global.isShield = true;
 
 global.shieldObj = object_index;
 
-global.shieldHP = 30;
+global.shieldHP = 20;
 global.shieldHPDefault = global.shieldHP;
 
 if (instance_exists(objBot_Shield)) {

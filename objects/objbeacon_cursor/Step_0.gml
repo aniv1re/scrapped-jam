@@ -1,7 +1,7 @@
 if (!objCharacter_Base.isDead) {
 	depth = -2000;
 
-	if (!collision_circle(global.playerPosX, global.playerPosY, 45, objBeacon, false, false)) {
+	if (!point_in_circle(global.playerPosX, global.playerPosY, beaconX, beaconY, 45)) {
 		image_alpha = 1;
 		var dir = point_direction(global.playerPosX, global.playerPosY, beaconX, beaconY);
 
@@ -13,7 +13,7 @@ if (!objCharacter_Base.isDead) {
 	else  if (collision_circle(objBeacon.x, objBeacon.y, 12, objCharacter_Base, false, false) || objBeacon.isActivated) {
 		image_alpha = 0;
 	}
-	else  {
+	else {
 		image_alpha = 1;
 		x = objBeacon.x;
 		y = objBeacon.y - 35;

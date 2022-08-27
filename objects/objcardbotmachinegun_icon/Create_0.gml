@@ -2,7 +2,7 @@ event_inherited();
 
 isOpen = false;
 currentBot = objBot_Machinegun;
-botBuildPriceScrap = 35;
+botBuildPriceScrap = 25;
 botBuildPriceWires = 15;
 botBuildPriceBatterys = 1;
 isRequiredWires = true;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprChest_Beacon",
-    "path": "sprites/sprChest_Beacon/sprChest_Beacon.yy",
+    "name": "sprBeaconChest_Special",
+    "path": "sprites/sprBeaconChest_Special/sprBeaconChest_Special.yy",
   },
   "solid": true,
   "visible": true,

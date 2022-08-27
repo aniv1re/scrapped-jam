@@ -1,11 +1,11 @@
 event_inherited();
 
-moveSpeed = .9;
-mobHealth = 6;
-mobDamage = 1;
+moveSpeed = 1.1;
+mobHealth = 10;
+mobDamage = 3;
 knockbackReduce = 1.5;
 aggroRadius = 500;
-attackRadius = 35;
+attackRadius = 40;
 currentEnemyType = enemyType.seeker;
 spriteIdle = sprEnemy_Seeker_Idle;
 spriteMove = sprEnemy_Seeker_Move;

@@ -1,5 +1,5 @@
 // diff timer
-global.difficultyTimerSeconds = 120;
+global.difficultyTimerSeconds = 20;
 
 // global timer
 global.minutes = 0;

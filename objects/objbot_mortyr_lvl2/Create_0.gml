@@ -1,9 +1,9 @@
 event_inherited();
 
-moveSpeed = 1.1;
-botHealth = 120;
+moveSpeed = 1.5;
+botHealth = 80;
 botHealthDefault = botHealth;
-botDamage = 11.5;
+botDamage = 14;
 knockbackReduce = 1.5;
 aggroRadius = 350;
 attackRadius = 195;

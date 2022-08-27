@@ -14,11 +14,11 @@ global.selectedBotId = 0;
 global.isBuilding = false;
 
 global.isShield = false;
-global.shieldHP = 24;
+global.shieldHP = 10;
 global.shieldHPDefault = global.shieldHP;
 global.shieldObj = 0;
 
-global.currentLevelDifficulty = 1;
+global.currentLevelDifficulty = 0;
 
 //global.shieldRegeneration = 1;
 //alarm[0] = 900;

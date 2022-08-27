@@ -103,7 +103,7 @@ if (currentState == stateEnemy.attack) {
 							}		
 							
 							isAttacked = true;
-							alarm[2] = irandom_range(50, 60);
+							alarm[2] = irandom_range(50, 70);
 						}
 					}
 					break;
@@ -129,7 +129,7 @@ if (currentState == stateEnemy.attack) {
 							}
 							
 							isAttacked = true;
-							alarm[2] = irandom_range(150, 160);
+							alarm[2] = irandom_range(110, 130);
 						}
 					}
 					break;
@@ -154,7 +154,7 @@ if (currentState == stateEnemy.attack) {
 								}
 							}
 							isAttacked = true;
-							alarm[2] = irandom_range(50, 60);
+							alarm[2] = irandom_range(70, 90);
 						}
 					}
 					break;
@@ -186,7 +186,7 @@ if (currentState == stateEnemy.attack) {
 								bulletDamage = other.mobDamage;
 							}		
 							isAttacked = true;
-							alarm[2] = irandom_range(50, 60);
+							alarm[2] = irandom_range(50, 70);
 						}
 					}
 				case enemyType.splasher: {
@@ -209,7 +209,7 @@ if (currentState == stateEnemy.attack) {
 							}
 							
 							isAttacked = true;
-							alarm[2] = irandom_range(150, 160);
+							alarm[2] = irandom_range(110, 130);
 						}
 						break;
 					}
@@ -235,7 +235,7 @@ if (currentState == stateEnemy.attack) {
 
 							
 						isAttacked = true;
-						alarm[2] = irandom_range(50, 60);
+						alarm[2] = irandom_range(70, 90);
 					}
 				}
 			}

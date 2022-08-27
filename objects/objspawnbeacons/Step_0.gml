@@ -9,7 +9,7 @@ if (!global.isBeaconCreated) {
 				
 				with (objBeacon_Cursor) {
 					beaconX = other.beacon1_X;
-					beaconY = other.beacon1_Y;
+					beaconY = other.beacon1_Y;  
 				}
 			}
 			break;

@@ -10,10 +10,12 @@ if (isSelected) {
 	draw_sprite_ext(sprCard_Ext, 2, x + 19, y, 1, 1, 0, -1, 1);
 	
 	if (isColliding) {
-		draw_sprite_ext(sprTipInfo_AreaBuild, 0, mouse_x, mouse_y, 1, 1, 0, -1, 1);
+		//draw_sprite_ext(sprTipInfo_AreaBuild, 0, mouse_x, mouse_y, 1, 1, 0, -1, 1);
+		cursor_sprite = s_cursor_build_no;
 	}
 	else {
-		draw_sprite_ext(sprTipInfo_AreaBuild, 1, mouse_x, mouse_y, 1, 1, 0, -1, 1);
+		//draw_sprite_ext(sprTipInfo_AreaBuild, 1, mouse_x, mouse_y, 1, 1, 0, -1, 1);
+		cursor_sprite = s_cursor_build_yes;
 	}
 }
 else {

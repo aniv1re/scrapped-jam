@@ -12,7 +12,7 @@
     "path": "audiogroups/sgSounds",
   },
   "soundFile": "sfxloot_scrap.wav",
-  "duration": 0.023447,
+  "duration": 0.091859,
   "parent": {
     "name": "SFX",
     "path": "folders/SFX.yy",

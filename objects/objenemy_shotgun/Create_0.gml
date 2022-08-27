@@ -1,8 +1,8 @@
 event_inherited();
 
-moveSpeed = .5;
-mobHealth = 36;
-mobDamage = 3;
+moveSpeed = .7;
+mobHealth = 20;
+mobDamage = 5;
 knockbackReduce = 3;
 aggroRadius = 500;
 attackRadius = 85;
