@@ -1,5 +1,7 @@
 scrSound(sfxBot_Spawn, 1);
 
+alarm[4] = 60;
+
 enum botType {
 	gunner = 2,
 	machinegun = 4,
